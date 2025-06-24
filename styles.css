@@ -28,6 +28,156 @@ header {
     color: #fff;
     text-align: center;
     padding: 100px 0;
+}/* La New產品專區樣式 */
+.product-showcase {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+.product-info {
+    flex: 2;
+}
+
+.product-info h3 {
+    color: #2c7d4a;
+    margin: 20px 0 10px;
+}
+
+.product-info ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-info li {
+    margin-bottom: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .product-showcase {
+        flex-direction: column;
+    }
+    
+    .product-image {
+        min-width: 100%;
+    }
+}/* La New產品專區樣式 */
+.product-showcase {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+.product-info {
+    flex: 2;
+}
+
+.product-info h3 {
+    color: #2c7d4a;
+    margin: 20px 0 10px;
+}
+
+.product-info ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-info li {
+    margin-bottom: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .product-showcase {
+        flex-direction: column;
+    }
+    
+    .product-image {
+        min-width: 100%;
+    }
 }
 
 header h1 {
