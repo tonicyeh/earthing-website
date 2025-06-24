@@ -346,3 +346,83 @@ footer {
         font-size: 1rem;
     }
 }
+/* 實踐方法區塊新樣式 */
+.method-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.method-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid #2c7d4a;
+}
+
+.method-card.highlight {
+    border-top: 4px solid #e74c3c;
+    transform: scale(1.02);
+}
+
+.method-card h3 {
+    color: #2c7d4a;
+    margin-top: 0;
+}
+
+.method-card.highlight h3 {
+    color: #e74c3c;
+}
+
+.method-tip {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* 比較表格樣式 */
+.comparison {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2c7d4a;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e8f4ec;
+}
+
+/* 響應式調整 */
+@media (max-width: 600px) {
+    .method-container {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+}
